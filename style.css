@@ -27,7 +27,8 @@ img {
 
 .content-container {
 	margin: 0 auto;
-	max-width: 1315px;
+	max-width: 1440px;
+  padding-inline: 64px;
 }
 
 :root {
