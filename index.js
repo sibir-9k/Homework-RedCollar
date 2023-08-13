@@ -8,7 +8,7 @@ const reloadGame = document.querySelector('.reload-game');
 const firstPlayerName = document.querySelector('.first-player');
 const secondPlayerName = document.querySelector('.second-player');
 
-const winPlayerName = document.querySelector('.win-player');
+const winPlayerName = document.querySelector('.win-name');
 const winnerBlock = document.querySelector('.winner-name');
 
 let blockItems = document.querySelectorAll('.block-item');

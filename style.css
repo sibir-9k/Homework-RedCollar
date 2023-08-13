@@ -28,11 +28,11 @@ button {
 	padding: 22px 44px;
 	border-radius: 21.622px;
 	background: #ef4c01;
-  border: inherit;
+	border: inherit;
 
 	color: #fff;
 	font-family: Roboto;
-	font-size: 48.649px;
+	font-size: 49px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -176,4 +176,19 @@ button {
 	flex-direction: column;
 	gap: 15px;
 	align-items: center;
+}
+
+.reload-game {
+	cursor: pointer;
+	padding: 22px 44px;
+	border-radius: 21.622px;
+	background: #07bb37;
+	border: inherit;
+	color: #fff;
+
+	font-family: Roboto;
+	font-size: 29px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
 }
