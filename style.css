@@ -15,6 +15,13 @@ button {
 	margin-bottom: 50px;
 }
 
+:root {
+	--promo-bg-btn: #ef4c01;
+	--reload-bg-btn: #07bb37;
+	--first-name-player-color: #ef4c01;
+	--second-name-player-color: blueviolet;
+}
+
 .promo {
 	display: flex;
 	flex-direction: column;
@@ -27,7 +34,7 @@ button {
 	cursor: pointer;
 	padding: 22px 44px;
 	border-radius: 22px;
-	background: #ef4c01;
+	background: var(--promo-bg-btn);
 	border: inherit;
 
 	color: #fff;
@@ -86,7 +93,7 @@ button {
 	font-weight: 800;
 	line-height: normal;
 	text-transform: uppercase;
-	color: #ef4c01;
+	color: var(--first-name-player-color);
 }
 .circle-name {
 	font-family: Rubik;
@@ -95,7 +102,7 @@ button {
 	font-weight: 800;
 	line-height: normal;
 	text-transform: uppercase;
-	color: blueviolet;
+	color: var(--second-name-player-color);
 }
 .first-player,
 .second-player {
@@ -104,7 +111,7 @@ button {
 }
 
 .win-name {
-	color: #ef4c01;
+	color: currentColor;
 }
 .winColor {
 	background: gold;

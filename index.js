@@ -26,7 +26,7 @@ const createAndPaintPlayer = (player, color) => {
 promoBtn.addEventListener('click', function () {
 	promoBlock.classList.add('close-promo');
 
-	firstPlayer = prompt('Имя первого игрока'); // рекурсия
+	firstPlayer = prompt('Имя первого игрока');
 	secondPlayer = prompt('Имя второго игрока');
 
 	firstPlayerName.textContent = firstPlayer;
@@ -89,6 +89,7 @@ const circleWin = () => {
 
 			winPlayerName.textContent = secondPlayer;
 			winnerBlock.classList.add('winner-open');
+			winPlayerName.style.color = 'blueviolet';
 			endGame();
 			return 1;
 		}
@@ -108,6 +109,7 @@ const crossWin = () => {
 
 			winPlayerName.textContent = firstPlayer;
 			winnerBlock.classList.add('winner-open');
+			winPlayerName.style.color = '#ef4c01';
 			endGame();
 			return 1;
 		}
