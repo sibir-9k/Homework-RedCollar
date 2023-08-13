@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>X-O</title>
+</head>
+<body>
+  <main>
+
+    <div class="promo">
+      <img src="./assets/svg/Group 4.svg" alt="" width="660" height="660">
+      <button class="promo-btn">Начать игру</button>
+    </div>
+
+    <div class="game-area">
+
+      <div class="players-names">
+        <div class="player-step">Ход: <span class="player"></span> </div>
+
+        <div class="players">
+          <div class="cross-name">Крестики: <span class="first-player"></span> </div>
+          <div class="circle-name">Нолики: <span class="second-player"></span> </div>
+        </div>
+
+      </div>
+
+      <div class="game-block">
+        <div class="block-item"></div>
+        <div class="block-item"></div>
+        <div class="block-item"></div>
+
+        <div class="block-item"></div>
+        <div class="block-item"></div>
+        <div class="block-item"></div>
+
+        <div class="block-item"></div>
+        <div class="block-item"></div>
+        <div class="block-item"></div>
+
+        <div class="horizontal-line-top">
+          <img src="./assets/svg/horizontal-line.svg" alt="" />
+        </div>
+
+        <div class="horizontal-line-bottom">
+          <img src="./assets/svg/horizontal-line.svg" alt="" />
+        </div>
+
+        <div class="vertical-line-left">
+          <img src="./assets/svg/vertical-line.svg" alt="" />
+        </div>
+
+        <div class="vertical-line-right">
+          <img src="./assets/svg/vertical-line.svg" alt="" />
+        </div>
+      </div>
+
+
+      <div class="winner-name">
+        <div class="win-player">Победитель: <span class="win-name"></span> </div>
+        <button class="reload-game">Новая игра</button>
+      </div>
+    </div>
+
+
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>

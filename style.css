@@ -1,0 +1,179 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000000;
+}
+
+button {
+	margin-bottom: 50px;
+}
+
+.promo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.close-promo {
+	display: none;
+}
+.promo-btn {
+	cursor: pointer;
+	padding: 22px 44px;
+	border-radius: 21.622px;
+	background: #ef4c01;
+  border: inherit;
+
+	color: #fff;
+	font-family: Roboto;
+	font-size: 48.649px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+
+	animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.game-step,
+.player {
+	color: #fff;
+}
+.players-names {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+.player-step,
+.win-player {
+	font-family: Rubik;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #fff;
+}
+.player-step span,
+.win-name {
+	font-size: 25px;
+	color: currentColor;
+}
+.players {
+	display: flex;
+	gap: 30px;
+}
+.cross-name {
+	font-family: Rubik;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #ef4c01;
+}
+.circle-name {
+	font-family: Rubik;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	text-transform: uppercase;
+	color: blueviolet;
+}
+.first-player,
+.second-player {
+	font-size: 25px;
+	border-bottom: 2px solid;
+}
+
+.win-name {
+	color: #ef4c01;
+}
+.winColor {
+	background: gold;
+}
+.game-area {
+	display: none;
+}
+.game-block {
+	width: 680px;
+	height: 680px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+
+	position: relative;
+}
+.open-game {
+	display: flex;
+	margin-top: 40px;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+.block-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 200px;
+	color: antiquewhite;
+	border: 3px solid aqua;
+	border-radius: 26.4px;
+	box-shadow: 1px 1px 20px aqua;
+	cursor: pointer;
+}
+.horizontal-line-top img,
+.horizontal-line-bottom img {
+	position: absolute;
+	width: 750px;
+}
+.horizontal-line-top img {
+	top: 163px;
+	left: -35px;
+}
+.horizontal-line-bottom img {
+	bottom: 166px;
+	left: -35px;
+}
+.vertical-line-left img,
+.vertical-line-right img {
+	position: absolute;
+	height: 750px;
+}
+.vertical-line-left img {
+	top: -35px;
+	left: 161px;
+}
+.vertical-line-right img {
+	bottom: -35px;
+	right: 161px;
+}
+
+.winner-name {
+	display: none;
+}
+
+.winner-open {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-items: center;
+}
