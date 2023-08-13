@@ -26,7 +26,7 @@ button {
 .promo-btn {
 	cursor: pointer;
 	padding: 22px 44px;
-	border-radius: 21.622px;
+	border-radius: 22px;
 	background: #ef4c01;
 	border: inherit;
 
@@ -139,11 +139,13 @@ button {
 	border-radius: 26.4px;
 	box-shadow: 1px 1px 20px aqua;
 	cursor: pointer;
+	z-index: 100;
 }
 .horizontal-line-top img,
 .horizontal-line-bottom img {
 	position: absolute;
 	width: 750px;
+	z-index: 0;
 }
 .horizontal-line-top img {
 	top: 163px;
@@ -157,6 +159,7 @@ button {
 .vertical-line-right img {
 	position: absolute;
 	height: 750px;
+	z-index: 0;
 }
 .vertical-line-left img {
 	top: -35px;
@@ -181,7 +184,7 @@ button {
 .reload-game {
 	cursor: pointer;
 	padding: 22px 44px;
-	border-radius: 21.622px;
+	border-radius: 22px;
 	background: #07bb37;
 	border: inherit;
 	color: #fff;

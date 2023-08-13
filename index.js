@@ -11,7 +11,7 @@ const secondPlayerName = document.querySelector('.second-player');
 const winPlayerName = document.querySelector('.win-name');
 const winnerBlock = document.querySelector('.winner-name');
 
-let blockItems = document.querySelectorAll('.block-item');
+const blockItems = document.querySelectorAll('.block-item');
 let counter = 0;
 
 let step = 'cross';
@@ -52,17 +52,9 @@ blockItems.forEach((item) => {
 		if (!item.classList.contains('circle') && !item.classList.contains('cross')) {
 			item.classList.add(step);
 
-			if (step === 'cross') {
-				const img = document.createElement('img');
-				img.src = './assets/svg/Cross.svg';
-				item.appendChild(img);
-			}
-
-			if (step === 'circle') {
-				const img = document.createElement('img');
-				img.src = './assets/svg/Circle.svg';
-				item.appendChild(img);
-			}
+			const img = document.createElement('img');
+			img.src = step === 'cross' ? './assets/svg/Cross.svg' : './assets/svg/Circle.svg';
+			item.appendChild(img);
 
 			counter++;
 			changeCarrentStepPlayer();
@@ -73,7 +65,7 @@ blockItems.forEach((item) => {
 	});
 });
 
-let win = [
+const win = [
 	[0, 1, 2],
 	[3, 4, 5],
 	[6, 7, 8],
@@ -84,7 +76,7 @@ let win = [
 	[2, 5, 8],
 ];
 
-let circleWin = () => {
+const circleWin = () => {
 	for (let i = 0; i < win.length; i++) {
 		if (
 			blockItems[win[i][0]].classList.contains('circle') &&
@@ -103,7 +95,7 @@ let circleWin = () => {
 	}
 };
 
-let crossWin = () => {
+const crossWin = () => {
 	for (let i = 0; i < win.length; i++) {
 		if (
 			blockItems[win[i][0]].classList.contains('cross') &&
@@ -122,14 +114,14 @@ let crossWin = () => {
 	}
 };
 
-let noWin = () => {
+const noWin = () => {
 	if (!crossWin() && !circleWin() && counter >= 9) {
 		winPlayerName.textContent = 'Ничья';
 		winnerBlock.classList.add('winner-open');
 	}
 };
 
-let endGame = () => {
+const endGame = () => {
 	gameBlock.style.pointerEvents = 'none';
 };
 
